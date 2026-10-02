@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+
+                ⭐ PUNTO 8: FUNCIONES CON JAVASCRIPT ⭐
+
+            </div>
+
+
+            <h2>
+                Funciones con JavaScript
+            </h2>
+
+
+            <p>
+
+                JavaScript permite que nuestra página
+                sea interactiva. Es decir, permite que
+                las cosas cambien cuando el usuario
+                realiza una acción.
+
+            </p>
+
+
+            <!-- FUNCIÓN 1 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 1: Saludo</h3>
+
+                <p>
+                    Al presionar el botón aparecerá
+                    un mensaje.
+                </p>
+
+                <button onclick="saludar()">
+
+                    Mostrar saludo
+
+                </button>
+
+
+                <div id="saludo" class="resultado">
+
+                    Aquí aparecerá el saludo.
+
+                </div>
+
+            </div>
+
+
+
+            <br>
+
+
+
+            <!-- FUNCIÓN 2 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 2: Contador</h3>
+
+                <p>
+                    Este contador aumenta cada vez
+                    que presionamos el botón.
+                </p>
+
+
+                <div id="contador">
+
+                    0
+
+                </div>
+
+
+                <button onclick="aumentar()">
+
+                    +1
+
+                </button>
+
+
+                <button onclick="reiniciar()">
+
+                    Reiniciar
+
+                </button>
+
+            </div>
+
+
+
+            <br>
+
+
+
+            <!-- FUNCIÓN 3 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 3: Mostrar y ocultar</h3>
+
+                <p>
+                    Este botón puede mostrar u ocultar
+                    un cuadro.
+                </p>
+
+
+                <button onclick="mostrarOcultar()">
+
+                    Mostrar / Ocultar
+
+                </button>
+
+
+                <div id="cuadro" class="resultado">
+
+                    ¡Hola! Este es un cuadro controlado
+                    mediante JavaScript.
+
+                </div>
+
+            </div>
+
+
+
+            <br>
+
+
+
+            <!-- FUNCIÓN 4 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 4: Cambiar fondo</h3>
+
+                <p>
+                    Este botón cambia el color de fondo
+                    de la página.
+                </p>
+
+
+                <button onclick="cambiarFondo()">
+
+                    Cambiar fondo
+
+                </button>
+
+            </div>
+
+
+            <br>
+
+
+            <div class="resultado">
+
+                <strong>
+                    ¿Qué está pasando?
+                </strong>
+
+                <p>
+
+                    Los botones utilizan JavaScript
+                    para ejecutar diferentes funciones.
+
+                </p>
+
+                <p>
+
+                    Por ejemplo:
+
+                </p>
+
+                <code>
+
+                    function saludar() {
+
+                    alert("¡Hola!");
+
+                    }
+
+                </code>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             9. PROBAR LA PÁGINA
+             ========================= -->
+
+        <section>
+
+            <h2>9. Probar la página</h2>
+
+            <p>
+
+                Finalmente debemos comprobar que todos
+                los botones, enlaces y funciones funcionen
+                correctamente.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Probar los botones.
+                </li>
+
+                <li>
+                    Probar el contador.
+                </li>
+
+                <li>
+                    Probar mostrar y ocultar.
+                </li>
+
+                <li>
+                    Probar el cambio de fondo.
+                </li>
+
+                <li>
+                    Revisar que los enlaces funcionen.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+         ========================= -->
+
+    <footer>
+
+        <p>
+            Mi proyecto de página web
+        </p>
+
+        <p>
+            HTML + CSS + JavaScript
+        </p>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+         TODO ESTÁ DENTRO DEL MISMO ARCHIVO
+         ================================================= -->
+
+    <script>
+
+        /* =================================
+           FUNCIÓN 1: SALUDAR
+           ================================= */
+
+        function saludar() {
+
+            document.getElementById("saludo").innerHTML =
+                "¡Hola! Esta frase fue creada con JavaScript.";
+
+        }
+
+
+
+        /* =================================
+           FUNCIÓN 2: CONTADOR
+           ================================= */
+
+        let numero = 0;
+
+
+        function aumentar() {
+
+            numero++;
+
+            document.getElementById("contador").innerHTML =
+                numero;
+
+        }
+
+
+        function reiniciar() {
+
+            numero = 0;
+
+            document.getElementById("contador").innerHTML =
+                numero;
+
+        }
+
+
+
+        /* =================================
+           FUNCIÓN 3: MOSTRAR / OCULTAR
+           ================================= */
+
+        function mostrarOcultar() {
+
+            let cuadro =
+                document.getElementById("cuadro");
+
+
+            if (cuadro.style.display === "none") {
+
+                cuadro.style.display = "block";
+
+            } else {
+
+                cuadro.style.display = "none";
+
+            }
+
+        }
+
+
+
+        /* =================================
+           FUNCIÓN 4: CAMBIAR FONDO
+           ================================= */
+
+        function cambiarFondo() {
+
+            document.body.style.backgroundColor =
+                "#fff3cd";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

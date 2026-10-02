@@ -1,0 +1,34 @@
+<html lang="es">
+<heat>
+<meta charset="UTF-8>
+<title>  hablemos sobre la inteligencia artificial-LLM </title>
+</head>
+<style>
+body{
+Font-family:Arial;
+background;#fOF8FF;
+margin:20px;
+}
+Heard,footer{
+backgroud:0066CC
+color:White;
+text-aling:center;
+padding:10px
+}
+h2{
+color:#0066CC
+}
+
+
+<h1>inteligencia artificial</h1>
+<h2>modelos de lenguaje de gran escala (LLM)<h2>
+<p>
+La inteligencia artificial (IA) es una tecnología que permite a las máquinas y computadoras simular capacidades humanas como el aprendizaje, la comprensión, la resolución de problemas, la toma de decisiones y la creatividad. Estas capacidades se logran mediante algoritmos avanzados que procesan grandes volúmenes de datos para identificar patrones y generar respuestas autónomas.
+
+La IA se utiliza en diversas aplicaciones, como el reconocimiento de objetos, la comprensión del lenguaje humano, la generación de contenido y la toma de decisiones basadas en datos. Por ejemplo, los vehículos autónomos y los asistentes virtuales como Siri o Alexa son ejemplos de IA aplicada.
+
+Componentes principales de la IA
+</p>
+
+<p>
+los llm son modelos de 

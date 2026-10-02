@@ -1,0 +1,68 @@
+// =================================
+// FUNCIÓN 1: SALUDAR
+// =================================
+
+function saludar() {
+
+    document.getElementById("saludo").innerHTML =
+        "¡Hola! Esta frase fue creada con JavaScript.";
+
+}
+
+
+// =================================
+// FUNCIÓN 2: CONTADOR
+// =================================
+
+let numero = 0;
+
+function aumentar() {
+
+    numero++;
+
+    document.getElementById("contador").innerHTML =
+        numero;
+
+}
+
+function reiniciar() {
+
+    numero = 0;
+
+    document.getElementById("contador").innerHTML =
+        numero;
+
+}
+
+
+// =================================
+// FUNCIÓN 3: MOSTRAR / OCULTAR
+// =================================
+
+function mostrarOcultar() {
+
+    let cuadro = document.getElementById("cuadro");
+
+    if (cuadro.style.display === "none") {
+
+        cuadro.style.display = "block";
+
+    } else {
+
+        cuadro.style.display = "none";
+
+    }
+
+}
+
+
+// =================================
+// FUNCIÓN 4: CAMBIAR FONDO
+// =================================
+
+function cambiarFondo() {
+
+    document.body.style.backgroundColor =
+        "#fff3cd";
+
+}

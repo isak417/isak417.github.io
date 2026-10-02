@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Página Web</title>
+
+    <!-- =========================
+         CSS: DISEÑO DE LA PÁGINA
+         ========================= -->
+    <style>
+
+        /* Diseño general */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            color: #222;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1d4ed8;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Menú */
+        nav {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px #bbb;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #1d4ed8;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        /* Contenido */
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* Cuadros */
+        section {
+            background-color: white;
+            margin: 30px 0;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #ddd;
+        }
+
+        h2 {
+            color: #1d4ed8;
+        }
+
+        /* Tarjetas */
+        .tarjetas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .tarjeta {
+            flex: 1;
+            min-width: 200px;
+            background-color: #eef4ff;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #c7d7f5;
+        }
+
+        /* Etiquetas */
+        .etiqueta {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 7px 12px;
+            margin: 4px;
+            border-radius: 20px;
+            font-family: monospace;
+        }
+
+        /* ==================================
+           PUNTO 8 - PARTE MÁS IMPORTANTE
+           ================================== */
+
+        #punto8 {
+            border: 5px solid #2563eb;
+            background-color: #eff6ff;
+            box-shadow: 0 0 15px #93c5fd;
+        }
+
+        #punto8 h2 {
+            font-size: 32px;
+            text-align: center;
+            color: #1d4ed8;
+        }
+
+        .titulo-importante {
+            background-color: #1d4ed8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Botones */
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #1e40af;
+        }
+
+        /* Cuadro donde aparecen resultados */
+        .resultado {
+            background-color: white;
+            border: 2px dashed #60a5fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+            min-height: 25px;
+        }
+
+        /* Contador */
+        #contador {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: #1d4ed8;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- =========================
+         1. ENCABEZADO
+         ========================= -->
+
+    <header>
+
+        <h1>Mi Página Web</h1>
+
+        <p>
+            Aprendiendo HTML, CSS y JavaScript
+        </p>
+
+    </header>
+
+
+    <!-- =========================
+         MENÚ
+         ========================= -->
+
+    <nav>
+
+        <a href="#tema">Tema</a>
+
+        <a href="#elementos">Elementos</a>
+
+        <a href="#estructura">Estructura</a>
+
+        <a href="#html">HTML</a>
+
+        <a href="#css">CSS</a>
+
+        <a href="#punto8">JavaScript</a>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- =========================
+             2. TEMA
+             ========================= -->
+
+        <section id="tema">
+
+            <h2>1. Elegir un tema</h2>
+
+            <p>
+                El tema de esta página es el desarrollo web.
+                En ella podemos aprender cómo utilizar HTML,
+                CSS y JavaScript para crear una página web.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             3. ELEMENTOS
+             ========================= -->
+
+        <section id="elementos">
+
+            <h2>2. Elementos de una página web</h2>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+
+                    <h3>Texto</h3>
+
+                    <p>
+                        Podemos utilizar títulos,
+                        párrafos y listas.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Imágenes</h3>
+
+                    <p>
+                        Las imágenes ayudan a
+                        complementar la información.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Enlaces</h3>
+
+                    <p>
+                        Los enlaces permiten ir
+                        hacia otras páginas o secciones.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta">
+
+                    <h3>Botones</h3>
+
+                    <p>
+                        Los botones permiten
+                        interactuar con la página.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             4. ESTRUCTURA
+             ========================= -->
+
+        <section id="estructura">
+
+            <h2>3. Planificar la estructura</h2>
+
+            <p>
+                Una página web puede dividirse en diferentes
+                partes para que la información esté organizada.
+            </p>
+
+            <ul>
+
+                <li>Encabezado</li>
+
+                <li>Menú de navegación</li>
+
+                <li>Contenido principal</li>
+
+                <li>Secciones</li>
+
+                <li>Pie de página</li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- =========================
+             5. INFORMACIÓN
+             ========================= -->
+
+        <section>
+
+            <h2>4. Organizar la información</h2>
+
+            <p>
+                Es importante organizar la información
+                para que el usuario pueda entenderla fácilmente.
+            </p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta">
+                    <h3>Información</h3>
+                    <p>
+                        Contenido claro y ordenado.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Diseño</h3>
+                    <p>
+                        Colores, tamaños y espacios.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Interacción</h3>
+                    <p>
+                        Botones y funciones.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             6. HTML Y ETIQUETAS
+             ========================= -->
+
+        <section id="html">
+
+            <h2>5. Estructura HTML</h2>
+
+            <p>
+                HTML utiliza etiquetas para construir
+                los diferentes elementos de una página.
+            </p>
+
+            <p>Algunas etiquetas utilizadas son:</p>
+
+            <span class="etiqueta">&lt;html&gt;</span>
+
+            <span class="etiqueta">&lt;head&gt;</span>
+
+            <span class="etiqueta">&lt;body&gt;</span>
+
+            <span class="etiqueta">&lt;h1&gt;</span>
+
+            <span class="etiqueta">&lt;p&gt;</span>
+
+            <span class="etiqueta">&lt;img&gt;</span>
+
+            <span class="etiqueta">&lt;a&gt;</span>
+
+            <span class="etiqueta">&lt;button&gt;</span>
+
+            <span class="etiqueta">&lt;section&gt;</span>
+
+            <span class="etiqueta">&lt;footer&gt;</span>
+
+        </section>
+
+
+
+        <!-- =========================
+             7. CSS
+             ========================= -->
+
+        <section id="css">
+
+            <h2>6. Diseño con CSS</h2>
+
+            <p>
+                CSS sirve para darle estilo a nuestra página.
+                Podemos cambiar colores, tamaños, fondos,
+                bordes, posiciones y muchas otras cosas.
+            </p>
+
+            <div class="tarjeta">
+
+                <h3>Ejemplo de CSS</h3>
+
+                <p>
+                    Los colores, los cuadros, los botones,
+                    las sombras y los tamaños que ves en
+                    esta página fueron realizados con CSS.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             8. ELEMENTOS INTERACTIVOS
+             ========================= -->
+
+        <section>
+
+            <h2>7. Elementos interactivos</h2>
+
+            <p>
+                Los elementos interactivos permiten que
+                el usuario pueda realizar acciones dentro
+                de la página.
+            </p>
+
+            <button>
+                Este es un botón
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PUNTO 8
+             FUNCIONES CON JAVASCRIPT
+             ================================================= -->
+
+        <section id="punto8">
+
+            <div class="titulo-importante">
+
+                ⭐ PUNTO 8: FUNCIONES CON JAVASCRIPT ⭐
+
+            </div>
+
+
+            <h2>
+                Funciones con JavaScript
+            </h2>
+
+
+            <p>
+
+                JavaScript permite que nuestra página
+                sea interactiva. Es decir, permite que
+                las cosas cambien cuando el usuario
+                realiza una acción.
+
+            </p>
+
+
+            <!-- FUNCIÓN 1 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 1: Saludo</h3>
+
+                <p>
+                    Al presionar el botón aparecerá
+                    un mensaje.
+                </p>
+
+                <button onclick="saludar()">
+
+                    Mostrar saludo
+
+                </button>
+
+
+                <div id="saludo" class="resultado">
+
+                    Aquí aparecerá el saludo.
+
+                </div>
+
+            </div>
+
+
+
+            <br>
+
+
+
+            <!-- FUNCIÓN 2 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 2: Contador</h3>
+
+                <p>
+                    Este contador aumenta cada vez
+                    que presionamos el botón.
+                </p>
+
+
+                <div id="contador">
+
+                    0
+
+                </div>
+
+
+                <button onclick="aumentar()">
+
+                    +1
+
+                </button>
+
+
+                <button onclick="reiniciar()">
+
+                    Reiniciar
+
+                </button>
+
+            </div>
+
+
+
+            <br>
+
+
+
+            <!-- FUNCIÓN 3 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 3: Mostrar y ocultar</h3>
+
+                <p>
+                    Este botón puede mostrar u ocultar
+                    un cuadro.
+                </p>
+
+
+                <button onclick="mostrarOcultar()">
+
+                    Mostrar / Ocultar
+
+                </button>
+
+
+                <div id="cuadro" class="resultado">
+
+                    ¡Hola! Este es un cuadro controlado
+                    mediante JavaScript.
+
+                </div>
+
+            </div>
+
+
+
+            <br>
+
+
+
+            <!-- FUNCIÓN 4 -->
+
+            <div class="tarjeta">
+
+                <h3>Función 4: Cambiar fondo</h3>
+
+                <p>
+                    Este botón cambia el color de fondo
+                    de la página.
+                </p>
+
+
+                <button onclick="cambiarFondo()">
+
+                    Cambiar fondo
+
+                </button>
+
+            </div>
+
+
+            <br>
+
+
+            <div class="resultado">
+
+                <strong>
+                    ¿Qué está pasando?
+                </strong>
+
+                <p>
+
+                    Los botones utilizan JavaScript
+                    para ejecutar diferentes funciones.
+
+                </p>
+
+                <p>
+
+                    Por ejemplo:
+
+                </p>
+
+                <code>
+
+                    function saludar() {
+
+                    alert("¡Hola!");
+
+                    }
+
+                </code>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             9. PROBAR LA PÁGINA
+             ========================= -->
+
+        <section>
+
+            <h2>9. Probar la página</h2>
+
+            <p>
+
+                Finalmente debemos comprobar que todos
+                los botones, enlaces y funciones funcionen
+                correctamente.
+
+            </p>
+
+            <ul>
+
+                <li>
+                    Probar los botones.
+                </li>
+
+                <li>
+                    Probar el contador.
+                </li>
+
+                <li>
+                    Probar mostrar y ocultar.
+                </li>
+
+                <li>
+                    Probar el cambio de fondo.
+                </li>
+
+                <li>
+                    Revisar que los enlaces funcionen.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+         ========================= -->
+
+    <footer>
+
+        <p>
+            Mi proyecto de página web
+        </p>
+
+        <p>
+            HTML + CSS + JavaScript
+        </p>
+
+    </footer>
+
+
+
+    <!-- =================================================
+         JAVASCRIPT
+         TODO ESTÁ DENTRO DEL MISMO ARCHIVO
+         ================================================= -->
+
+    <script>
+
+        /* =================================
+           FUNCIÓN 1: SALUDAR
+           ================================= */
+
+        function saludar() {
+
+            document.getElementById("saludo").innerHTML =
+                "¡Hola! Esta frase fue creada con JavaScript.";
+
+        }
+
+
+
+        /* =================================
+           FUNCIÓN 2: CONTADOR
+           ================================= */
+
+        let numero = 0;
+
+
+        function aumentar() {
+
+            numero++;
+
+            document.getElementById("contador").innerHTML =
+                numero;
+
+        }
+
+
+        function reiniciar() {
+
+            numero = 0;
+
+            document.getElementById("contador").innerHTML =
+                numero;
+
+        }
+
+
+
+        /* =================================
+           FUNCIÓN 3: MOSTRAR / OCULTAR
+           ================================= */
+
+        function mostrarOcultar() {
+
+            let cuadro =
+                document.getElementById("cuadro");
+
+
+            if (cuadro.style.display === "none") {
+
+                cuadro.style.display = "block";
+
+            } else {
+
+                cuadro.style.display = "none";
+
+            }
+
+        }
+
+
+
+        /* =================================
+           FUNCIÓN 4: CAMBIAR FONDO
+           ================================= */
+
+        function cambiarFondo() {
+
+            document.body.style.backgroundColor =
+                "#fff3cd";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
