@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>IA Generativa</title>
+<style>
+body {
+  font-family: Georgia, serif;
+  background: #f5f1e8;
+  color: #2c3e50;
+  margin: 0;
+  line-height: 1.6;
+}
+header {
+  background: #2a9d8f;
+  color: white;
+  padding: 40px 20px;
+  border-bottom: 5px solid #264653;
+}
+header h1 { margin: 0; font-size: 2.3em; }
+header p { font-style: italic; }
+
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+section {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border-left: 6px solid #2a9d8f;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+h2 {
+  color: #264653;
+  border-bottom: 2px dashed #2a9d8f;
+  padding-bottom: 8px;
+}
+img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 8px;
+  display: block;
+  margin: 15px auto;
+  border: 3px solid #e9c46a;
+}
+
+ul {
+  background: #fefae0;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+ul li { margin: 6px 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+th, td {
+  border: 1px solid #2a9d8f;
+  padding: 10px;
+  text-align: center;
+}
+th {
+  background: #2a9d8f;
+  color: white;
+}
+tr:nth-child(even) { background: #f1faee; }
+
+blockquote {
+  background: #e9c46a;
+  color: #264653;
+  padding: 15px;
+  border-left: 5px solid #264653;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+button {
+  background: #264653;
+  color: white;
+  border: 0;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+button:hover { background: #2a9d8f; }
+#resultado {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #e76f51;
+}
+
+footer {
+  background: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>✨ IA Generativa</h1>
+  <p>La creatividad hecha por máquinas</p>
+</header>
+
+<main>
+
+<section>
+  <h2>¿Qué es la IA Generativa?</h2>
+  <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600" alt="IA Generativa">
+  <p>
+    La <b>Inteligencia Artificial Generativa</b> es una rama de la IA capaz de crear contenido nuevo y original:
+    imágenes, textos, música, videos e incluso código. A diferencia de la IA tradicional, que solo analiza datos,
+    la IA generativa <b>aprende patrones</b> a partir de millones de ejemplos y luego produce cosas completamente nuevas.
+  </p>
+  <p>
+    Funciona gracias a modelos como las <b>redes neuronales</b> y los <b>transformers</b>, que imitan la forma
+    en que el cerebro humano procesa la información. Por eso, cuando le pides algo, la IA no copia: <b>crea</b>.
+  </p>
+</section>
+
+<section>
+  <h2>🎨 Creación de imágenes</h2>
+  <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600" alt="Arte IA">
+  <p>
+    Herramientas como <b>DALL-E</b>, <b>Midjourney</b> y <b>Stable Diffusion</b> permiten generar imágenes
+    impresionantes solo con una descripción de texto. Puedes pedir "un gato astronauta en Marte estilo cyberpunk"
+    y la IA lo creará en segundos.
+  </p>
+  <p>
+    Esto ha revolucionado el diseño, la publicidad y el arte digital, permitiendo que cualquier persona,
+    sin saber dibujar, pueda plasmar sus ideas visualmente.
+  </p>
+</section>
+
+<section>
+  <h2>💬 Generación de texto</h2>
+  <img src="https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?w=600" alt="Chat IA">
+  <p>
+    Modelos como <b>ChatGPT</b>, <b>Claude</b> y <b>Gemini</b> pueden escribir ensayos, cuentos, poemas,
+    correos electrónicos y hasta programas de computadora. Son capaces de mantener conversaciones naturales,
+    responder preguntas y ayudar con tareas creativas o técnicas.
+  </p>
+</section>
+
+<section>
+  <h2>🎵 Música y video</h2>
+  <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600" alt="Música IA">
+  <p>
+    Plataformas como <b>Suno</b> y <b>Udio</b> crean canciones completas con letra, melodía y voz.
+    Mientras tanto, herramientas como <b>Sora</b> de OpenAI generan videos realistas a partir de texto.
+  </p>
+</section>
+
+<section>
+  <h2>🚀 Aplicaciones principales</h2>
+  <ul>
+    <li>🎨 <b>Arte digital:</b> creación de ilustraciones y diseños.</li>
+    <li>📚 <b>Educación:</b> generación de materiales y resúmenes.</li>
+    <li>💻 <b>Programación:</b> escritura automática de código.</li>
+    <li>🎬 <b>Cine y video:</b> efectos visuales y videos cortos.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>🛠️ Herramientas más usadas</h2>
+  <table>
+    <tr>
+      <th>Herramienta</th>
+      <th>Función</th>
+      <th>Tipo</th>
+    </tr>
+    <tr>
+      <td>DALL-E</td>
+      <td>Genera imágenes</td>
+      <td>Imagen</td>
+    </tr>
+    <tr>
+      <td>ChatGPT</td>
+      <td>Conversa y escribe</td>
+      <td>Texto</td>
+    </tr>
+    <tr>
+      <td>Suno</td>
+      <td>Crea canciones</td>
+      <td>Música</td>
+    </tr>
+    <tr>
+      <td>Sora</td>
+      <td>Genera videos</td>
+      <td>Video</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>💭 Reflexión</h2>
+  <blockquote>
+    "La IA Generativa no reemplaza la creatividad humana, la amplifica."
+  </blockquote>
+  <p style="text-align:center;">
+    <button onclick="mensaje()">¿Por qué es importante?</button>
+  </p>
+  <p id="resultado" style="text-align:center;"></p>
+</section>
+
+</main>
+
+<footer>
+  <p>Hecho con 💚 para aprender sobre IA Generativa</p>
+</footer>
+
+<script>
+function mensaje() {
+  document.getElementById("resultado").innerHTML =
+    "¡La IA Generativa está transformando la creatividad humana! 🧠✨";
+}
+</script>
+
+</body>
+</html>
